@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Contact - Moderna Bootstrap Template</title>
+  <title>Contactos - Manos Abiertas</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -50,30 +50,31 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="" href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="active" href="index.html">Inicio</a></li>
+          <li><a href="about.html">Quienes Somos</a></li>
+          <li><a href="services.html">Voluntariado</a></li>
+          <li><a href="portfolio.html">Delegaciones</a></li>
+          <li><a href="team.html">Noticias</a></li>
+          
+          <li class="dropdown"><a href="#"><span>Programas</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+              <li><a href="#">Hogares</a></li>
+              <li class="dropdown"><a href="#"><span>Educación</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
+                  <li><a href="#">Talleres</a></li>
+                  <li><a href="#">Educación</a></li>
+                  <li><a href="#">Promoción Social</a></li>
+                  <li><a href="#">Soledad</a></li>
+                  <li><a href="#">Espiritualidad</a></li>
                 </ul>
               </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Espiritualidad</a></li>
+              <li><a href="#">Promoción Social</a></li>
+              <li><a href="#">Soledad</a></li>
             </ul>
           </li>
-          <li><a class="active" href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html">Contactos</a></li>
+          <li><a href="blog.html">Iniciar sesión</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -110,24 +111,33 @@
               <div class="col-md-12">
                 <div class="info-box">
                   <i class="bx bx-map"></i>
-                  <h3>Our Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <h3>Nuestra Dirección</h3>
+                  <p>Paraguay 1606, piso 2 Dpto B CABA – Buenos Aires</p>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="info-box">
                   <i class="bx bx-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>info@example.com<br>contact@example.com</p>
+                  <h3>Email</h3>
+                  <p>nacional@manosabiertas.org.ar</p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Teléfono</h3>
+                  <p>(011) 4371 5869</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-phone-call"></i>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                  <h3>Whatsapp</h3>
+                  <p>+54 9 11 6640 7627</p>
                 </div>
               </div>
+            
             </div>
 
           </div>
@@ -136,24 +146,38 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="apellido_nombre" class="form-control" id="apellido_nombre" placeholder="Apellido y nombre" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Correo electrónico" required>
                 </div>
               </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              
+              <div class="row">
+                <div class="col-md-6 form-group mt-3">
+                  <select name="delegacion" id="delegacion" class="form-select">
+                    <option value="1">Delegacion 1 - Provincia</option>
+                    <option value="2">Delegacion 2 - Provincia</option>
+                    <option value="3">Delegacion 3 - Provincia</option>
+                    <option value="4">Delegacion 4 - Provincia</option>
+                    <option value="5">Delegacion 5 - Provincia</option>
+                    <option value="6">Delegacion 5 - Provincia</option>
+                  </select>
+                </div>
+                <div class="col-md-6 form-group mt-3">
+                  <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Teléfono" required>
+                </div>
               </div>
+              
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
             </form>
           </div>
 
@@ -165,8 +189,8 @@
     <!-- ======= Map Section ======= -->
     <section class="map mt-2">
       <div class="container-fluid p-0">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2sbg!4v1579767901424!5m2!1sen!2sbg" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-      </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2219154712793!2d-58.392070285195416!3d-34.59854956473087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabf3f4b6409%3A0x78b17ebca4689cec!2sParaguay%201606%20piso%202%20Dpto%20B%2C%20C1019%20CABA!5e0!3m2!1ses-419!2sar!4v1670598003236!5m2!1ses-419!2sar" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
     </section><!-- End Map Section -->
 
   </main><!-- End #main -->
